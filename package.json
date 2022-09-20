@@ -9,6 +9,7 @@
         "@pulumi/aws": "^5.0.0",
         "@pulumi/awsx": "^0.40.0",
         "@pulumi/pulumi": "^3.0.0",
-        "file-type": "^18.0.0"
+        "file-type": "^18.0.0",
+        "jimp": "^0.16.2"
     }
 }
