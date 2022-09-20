@@ -20,6 +20,16 @@ export const onObjectCreatedHandler = async (event: aws.s3.BucketEvent) => {
         Key: objectName,
     };
     const object = client.getObject(params).createReadStream();
-    console.log(await fileTypeFromStream(object))
+    const objectType = await fileTypeFromStream(object)
+
+    if (!objectType) {
+        throw new Error("Could not determine file type");
+    }
+
+    if (!objectType.mime.startsWith("image/")) {
+        console.log(`Object is not an image: ${objectName}`);
+        return;
+    }
+
 
 }
