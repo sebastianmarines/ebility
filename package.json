@@ -6,10 +6,12 @@
     },
     "dependencies": {
         "@aws-sdk/client-s3": "^3.171.0",
+        "@jorgeferrero/stream-to-buffer": "^2.0.6",
         "@pulumi/aws": "^5.0.0",
         "@pulumi/awsx": "^0.40.0",
         "@pulumi/pulumi": "^3.0.0",
         "file-type": "^18.0.0",
+        "image-convert": "^0.1.33",
         "jimp": "^0.16.2"
     }
 }
